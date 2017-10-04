@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-server": "node express-server/app.js",
-    "server": "nodemon --watch server --exec babel-node -- express-server/app.js"
+    "server": "nodemon --watch server --exec babel-node -- express-server/app.js",
+    "start-server": "npm run build && node express-server/app.js"
   }
 }
